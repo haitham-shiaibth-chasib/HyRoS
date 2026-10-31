@@ -1,0 +1,139 @@
+Enron-Spam after cleaning/dedup: 30137 (ham=15590, spam=14547)
+ date  ham  spam
+ 1999  136     0
+ 2000 6527     0
+ 2001 7659    30
+ 2002 1268   943
+ 2003    0   103
+ 2004    0  5504
+ 2005    0  7967
+              model     C    cv_F1
+          LR (word)   1.0 0.985697
+          LR (word)  10.0 0.989531
+          LR (word) 100.0 0.990591
+LR (word+char+norm)   1.0 0.988141
+LR (word+char+norm)  10.0 0.990889
+LR (word+char+norm) 100.0 0.991395
+E1 seed 0 done
+E1 seed 1 done
+E1 seed 2 done
+E1 seed 3 done
+E1 seed 4 done
+                     Accuracy_mean  Accuracy_std  F1_mean  FPR_mean  AUC_mean
+model                                                                        
+NB (word)                   0.9917        0.0012   0.9914    0.0063    0.9996
+SVM (word)                  0.9930        0.0012   0.9927    0.0096    0.9996
+LR (word)                   0.9926        0.0012   0.9924    0.0101    0.9996
+LR (word+char)              0.9935        0.0010   0.9933    0.0090    0.9997
+LR (word+char+norm)         0.9935        0.0009   0.9933    0.0089    0.9997
+HyRoS                       0.9932        0.0010   0.9930    0.0101    0.9997
+E2 chrono: fit 21697, calibration 2412, test 6028; ham fit<= 2001-07-26, ham test>= 2001-10-01; spam fit<= 2005-06-02, spam test>= 2005-06-27
+              model          threshold  Accuracy     F1  Recall    FPR    MCC    AUC
+          NB (word)            default    0.9796 0.9788  0.9735 0.0148 0.9592 0.9976
+          NB (word) recency-calibrated    0.9728 0.9713  0.9540 0.0096 0.9460 0.9976
+         SVM (word)            default    0.9705 0.9699  0.9849 0.0430 0.9414 0.9959
+         SVM (word) recency-calibrated    0.9808 0.9800  0.9763 0.0151 0.9615 0.9959
+          LR (word)            default    0.9735 0.9728  0.9835 0.0359 0.9471 0.9956
+          LR (word) recency-calibrated    0.9798 0.9790  0.9749 0.0157 0.9595 0.9956
+     LR (word+char)            default    0.9696 0.9691  0.9866 0.0462 0.9399 0.9974
+     LR (word+char) recency-calibrated    0.9745 0.9736  0.9773 0.0282 0.9489 0.9974
+LR (word+char+norm)            default    0.9693 0.9688  0.9863 0.0465 0.9392 0.9974
+LR (word+char+norm) recency-calibrated    0.9743 0.9735  0.9770 0.0282 0.9485 0.9974
+              HyRoS            default    0.9685 0.9680  0.9876 0.0494 0.9377 0.9974
+              HyRoS recency-calibrated    0.9726 0.9718  0.9787 0.0330 0.9453 0.9974
+           HyRoS+GW            default    0.9491 0.9491  0.9842 0.0837 0.9006 0.9953
+           HyRoS+GW recency-calibrated    0.9667 0.9658  0.9739 0.0401 0.9334 0.9953
+     Monotone top-3 recency-calibrated    0.7336 0.6338  0.4777 0.0276 0.5230 0.9321
+SpamAssassin messages overlapping Enron-Spam (removed): 464 (ham=0, spam=464)
+SpamAssassin after parsing/dedup: 5455 (ham=4110, spam=1345)
+E3 NB (word) done
+E3 SVM (word) done
+E3 LR (word) done
+E3 LR (word+char) done
+E3 LR (word+char+norm) done
+E3 HyRoS done
+              model  Accuracy     F1  Recall    FPR  FPR_hard_ham    AUC
+          NB (word)    0.4878 0.4862  0.9829 0.6742         0.776 0.8972
+         SVM (word)    0.4233 0.4593  0.9933 0.7633         0.876 0.9590
+          LR (word)    0.4277 0.4610  0.9926 0.7572         0.880 0.9582
+     LR (word+char)    0.4220 0.4595  0.9963 0.7659         0.900 0.9601
+LR (word+char+norm)    0.4191 0.4584  0.9970 0.7701         0.904 0.9621
+              HyRoS    0.4018 0.4513  0.9978 0.7932         0.908 0.9623
+                           Recall_mean  Recall_std  FPR_mean  FPR_std  FPR_hard_ham_mean  FPR_hard_ham_std  F1_mean  F1_std
+model               n_ham                                                                                                  
+NB (word)           25          0.5468      0.1115    0.0489   0.0345             0.0643            0.0457   0.6391  0.0562
+                    50          0.4454      0.0792    0.0188   0.0117             0.0276            0.0088   0.5886  0.0665
+                    100         0.4136      0.0780    0.0141   0.0145             0.0255            0.0124   0.5641  0.0585
+                    200         0.4108      0.0442    0.0107   0.0055             0.0218            0.0058   0.5683  0.0383
+                    500         0.3935      0.0330    0.0083   0.0041             0.0206            0.0079   0.5551  0.0294
+SVM (word)          25          0.7435      0.1896    0.0426   0.0356             0.1562            0.0890   0.7808  0.1160
+                    50          0.5958      0.1588    0.0156   0.0156             0.0820            0.0539   0.7141  0.1055
+                    100         0.4649      0.1239    0.0066   0.0047             0.0481            0.0277   0.6173  0.1090
+                    200         0.4616      0.1593    0.0071   0.0061             0.0479            0.0321   0.6069  0.1514
+                    500         0.5417      0.1139    0.0095   0.0067             0.0584            0.0340   0.6846  0.0903
+LR (word)           25          0.7563      0.1629    0.0409   0.0310             0.1519            0.0784   0.7949  0.0964
+                    50          0.6254      0.1439    0.0152   0.0146             0.0775            0.0519   0.7396  0.0937
+                    100         0.5181      0.1193    0.0068   0.0049             0.0489            0.0276   0.6660  0.0981
+                    200         0.5142      0.1631    0.0076   0.0064             0.0491            0.0335   0.6543  0.1448
+                    500         0.5890      0.1141    0.0099   0.0071             0.0603            0.0370   0.7228  0.0869
+LR (word+char)      25          0.7796      0.1039    0.0460   0.0382             0.1610            0.1020   0.8107  0.0263
+                    50          0.6948      0.1179    0.0193   0.0188             0.0922            0.0603   0.7874  0.0718
+                    100         0.5990      0.1061    0.0068   0.0049             0.0444            0.0245   0.7344  0.0819
+                    200         0.6034      0.1012    0.0072   0.0079             0.0419            0.0364   0.7384  0.0696
+                    500         0.6666      0.0729    0.0112   0.0061             0.0643            0.0345   0.7835  0.0498
+LR (word+char+norm) 25          0.7836      0.1129    0.0477   0.0413             0.1638            0.1079   0.8107  0.0303
+                    50          0.6912      0.1179    0.0176   0.0167             0.0869            0.0571   0.7871  0.0742
+                    100         0.5978      0.1022    0.0061   0.0043             0.0407            0.0223   0.7348  0.0803
+                    200         0.6175      0.0942    0.0074   0.0076             0.0444            0.0361   0.7497  0.0629
+                    500         0.6674      0.0797    0.0113   0.0068             0.0662            0.0371   0.7836  0.0544
+HyRoS               25          0.7904      0.1012    0.0467   0.0394             0.1522            0.0986   0.8169  0.0242
+                    50          0.6997      0.1201    0.0183   0.0179             0.0836            0.0567   0.7918  0.0771
+                    100         0.5975      0.1096    0.0063   0.0050             0.0387            0.0220   0.7335  0.0860
+                    200         0.6157      0.0923    0.0074   0.0067             0.0448            0.0318   0.7484  0.0632
+                    500         0.6745      0.0788    0.0115   0.0068             0.0603            0.0324   0.7884  0.0527
+model                       NB (word)  SVM (word)  LR (word)  LR (word+char)  LR (word+char+norm)   HyRoS  HyRoS+GW  Monotone top-3
+attack                                                                                                                             
+clean                          0.9540      0.9763     0.9749          0.9773               0.9770  0.9787    0.9739          0.4777
+obfuscation 10%                0.9512      0.9759     0.9742          0.9780               0.9787  0.9818    0.9763          0.4711
+obfuscation 20%                0.9488      0.9708     0.9691          0.9787               0.9787  0.9838    0.9790          0.4608
+obfuscation 30%                0.9515      0.9698     0.9667          0.9801               0.9790  0.9842    0.9811          0.4567
+obfuscation 50%                0.9409      0.9625     0.9584          0.9787               0.9811  0.9876    0.9863          0.4426
+good-word k=10                 0.6536      0.8622     0.8622          0.8749               0.8732  0.8804    0.9014          0.4777
+good-word k=25                 0.3186      0.5808     0.6065          0.6230               0.6206  0.6254    0.7357          0.4777
+good-word k=50                 0.1711      0.2457     0.2725          0.2639               0.2625  0.2646    0.4055          0.4777
+good-word k=25 interleaved     0.2893      0.5546     0.5766          0.6162               0.6151  0.6182    0.7210          0.4777
+combined (30% + k=25)          0.2522      0.4674     0.4955          0.5591               0.6110  0.6488    0.7481          0.4533
+model                        HyRoS  LR (word)
+attack                                       
+clean                       0.9979     0.9955
+combined (30% + k=25)       0.7914     0.7131
+good-word k=10              0.9567     0.9515
+good-word k=25              0.7869     0.8079
+good-word k=25 interleaved  0.7784     0.7835
+good-word k=50              0.4275     0.4986
+obfuscation 10%             0.9983     0.9962
+obfuscation 20%             0.9979     0.9952
+obfuscation 30%             0.9986     0.9959
+obfuscation 50%             0.9983     0.9924
+                                 test_set  LR(word)_only_correct  HyRoS_only_correct      p_value
+                     chronological, clean                     74                  31 3.275535e-05
+           chronological, obfuscation 10%                     76                  44 4.455023e-03
+           chronological, obfuscation 20%                     71                  60 3.823543e-01
+           chronological, obfuscation 30%                     71                  68 8.653735e-01
+           chronological, obfuscation 50%                     71                 102 2.228235e-02
+            chronological, good-word k=10                    130                 129 1.000000e+00
+            chronological, good-word k=25                    210                 211 1.000000e+00
+            chronological, good-word k=50                    184                 107 7.469178e-06
+chronological, good-word k=25 interleaved                    173                 240 1.138076e-03
+     chronological, combined (30% + k=25)                    112                 504 2.747393e-60
+              model   fit_s  latency_ms_per_email  model_size_MB  n_features
+          NB (word)   9.492                 0.552         14.467      200000
+         SVM (word)   9.147                 0.577          9.666      200000
+          LR (word)  10.426                 0.577          9.667      200000
+     LR (word+char)  62.433                 1.757         17.286      379575
+LR (word+char+norm)  67.235                 2.263         17.288      379668
+              HyRoS  83.059                 2.222         19.362      428917
+           HyRoS+GW 103.800                 2.374         20.712      460467
+     Monotone top-3   7.277                 0.587          2.296       61928
+done
+SpamAssassin hard ham after removal: 250

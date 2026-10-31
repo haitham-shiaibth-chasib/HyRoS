@@ -1,0 +1,11 @@
+test_set,LR(word)_only_correct,HyRoS_only_correct,p_value
+"chronological, clean",74,31,3.27553526874422e-05
+"chronological, obfuscation 10%",76,44,0.004455023177550935
+"chronological, obfuscation 20%",71,60,0.3823543213561345
+"chronological, obfuscation 30%",71,68,0.8653735109027348
+"chronological, obfuscation 50%",71,102,0.022282345888707304
+"chronological, good-word k=10",130,129,1.0
+"chronological, good-word k=25",210,211,1.0
+"chronological, good-word k=50",184,107,7.469178117077527e-06
+"chronological, good-word k=25 interleaved",173,240,0.0011380759993342064
+"chronological, combined (30% + k=25)",112,504,2.7473931603185494e-60
