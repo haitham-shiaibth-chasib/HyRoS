@@ -1,0 +1,4 @@
+part,n,both_correct,LR_only,HyRoS_only,both_wrong,p
+test ham without HourAhead,2344,2289,6,13,36,0.1670684814453125
+"test ham, all",3118,3002,67,13,36,6.415141174951122e-10
+test spam,2910,2830,7,18,55,0.043285250663757324

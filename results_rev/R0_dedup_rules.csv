@@ -1,0 +1,8 @@
+rule,messages
+rows in the single-file release,33716
+exact duplicates of subject+body removed,30494
+"empty messages removed, exact text duplicates removed",30462
+"empty messages removed, duplicates after whitespace normalisation",30137
+"empty messages removed, duplicates after lower-casing and whitespace normalisation (this study)",30137
+"empty messages removed, duplicates after keeping letters and digits only",30076
+"missing bodies dropped, duplicates of the body text removed",29779

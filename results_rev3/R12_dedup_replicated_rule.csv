@@ -1,0 +1,3 @@
+rule,kept,ham,spam
+"replicated study: lower-case, keep letters, digits, $ and %, collapse whitespace",30090,15550,14540
+"same, also dropping messages left empty after cleaning",30089,15550,14539

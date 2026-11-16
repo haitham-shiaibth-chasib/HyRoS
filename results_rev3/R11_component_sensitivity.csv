@@ -1,0 +1,157 @@
+analysis,comparison,attack,diff_pp,CI_lo_pp,CI_hi_pp,p_boot,p_holm
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A1 - LR: character n-grams,clean,0.0,-0.9621993127147732,1.8900343642611617,0.8975,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A1 - LR: character n-grams,obfuscation 10%,0.2405498281786933,-0.7903780068728494,2.268041237113405,0.8005,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A1 - LR: character n-grams,obfuscation 20%,0.6185567010309256,-0.6872852233676952,2.646048109965627,0.4905,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A1 - LR: character n-grams,obfuscation 30%,0.9278350515463885,-0.5154639175257714,3.3341924398625378,0.3945,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A1 - LR: character n-grams,obfuscation 50%,1.6494845360824684,-0.5498281786941561,4.261168384879721,0.3595,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A1 - LR: character n-grams,good-word k=10,-1.0996563573883122,-6.2895189003436425,5.877147766323021,0.9105,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A1 - LR: character n-grams,good-word k=25,-2.130584192439866,-9.897766323024063,9.14089347079038,0.8614999999999999,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A1 - LR: character n-grams,good-word k=50,-2.852233676975946,-8.728522336769762,4.982817869415807,0.6735,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A1 - LR: character n-grams,good-word k=25 interleaved,0.13745704467353903,-8.695017182130586,11.752577319587632,0.9085,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A1 - LR: character n-grams,combined (30% + k=25),3.161512027491403,-5.636597938144332,15.67096219931271,0.5974999999999999,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A1 - LR: character n-grams,held-out edits 50%,0.03436426116838476,-1.855670103092777,2.3024054982817788,0.9325,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A1 - LR: character n-grams,held-out edits 100%,0.6872852233676952,-1.2371134020618513,4.365120274914091,0.6515,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A1 - LR: character n-grams,held-out edits 30% + good-word k=25,-0.3436426116838476,-9.312714776632298,11.306701030927824,0.9564999999999999,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A2 - A1: normalisation after character n-grams,clean,0.0,-0.13745704467353903,0.06872852233676952,1.0,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A2 - A1: normalisation after character n-grams,obfuscation 10%,0.0,-0.20618556701030855,0.27491408934707806,0.9554999999999999,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A2 - A1: normalisation after character n-grams,obfuscation 20%,0.20618556701030855,-0.20618556701030855,0.413230240549822,0.5215,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A2 - A1: normalisation after character n-grams,obfuscation 30%,0.13745704467353903,-0.27491408934707806,0.44673539518900185,0.7635,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A2 - A1: normalisation after character n-grams,obfuscation 50%,0.44673539518900185,-0.06872852233676952,0.8934707903780037,0.0995,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A2 - A1: normalisation after character n-grams,good-word k=10,-0.06872852233676952,-0.3092783505154628,0.1718213058419238,0.7234999999999999,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A2 - A1: normalisation after character n-grams,good-word k=25,-0.27491408934707806,-0.4810996563573977,0.20618556701030855,0.4425,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A2 - A1: normalisation after character n-grams,good-word k=50,-0.10309278350515427,-0.24054982817869608,0.24054982817869616,0.8584999999999999,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A2 - A1: normalisation after character n-grams,good-word k=25 interleaved,-0.10309278350515427,-0.5154639175257714,0.20618556701030855,0.5315,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A2 - A1: normalisation after character n-grams,combined (30% + k=25),5.017182130584197,4.158075601374566,6.048109965635734,0.0005,0.006500000000000001
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A2 - A1: normalisation after character n-grams,held-out edits 50%,-0.06872852233676952,-0.20618556701030855,0.06872852233676952,0.7835,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A2 - A1: normalisation after character n-grams,held-out edits 100%,0.0,-0.20618556701030855,0.10309278350515427,0.8514999999999999,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A2 - A1: normalisation after character n-grams,held-out edits 30% + good-word k=25,-0.1718213058419238,-0.4123711340206171,0.3436426116838476,0.5135,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",HyRoS - A2: obfuscation augmentation,clean,-0.20618556701031965,-0.4810996563573866,0.10309278350515427,0.4325,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",HyRoS - A2: obfuscation augmentation,obfuscation 10%,-0.03436426116839586,-0.27491408934707806,0.3092783505154628,0.9215,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",HyRoS - A2: obfuscation augmentation,obfuscation 20%,0.09621993127146844,-0.10309278350515427,0.4123711340206171,0.3025,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",HyRoS - A2: obfuscation augmentation,obfuscation 30%,0.19243986254294798,0.0,0.5154639175257714,0.0615,0.4305
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",HyRoS - A2: obfuscation augmentation,obfuscation 50%,0.44673539518899075,0.10309278350515427,0.9278350515463885,0.006500000000000001,0.07800000000000001
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",HyRoS - A2: obfuscation augmentation,good-word k=10,-1.69072164948455,-2.6460481099656374,-0.03436426116838476,0.0495,0.396
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",HyRoS - A2: obfuscation augmentation,good-word k=25,-2.879725085910645,-4.39862542955326,-0.8591065292096189,0.0125,0.1265
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",HyRoS - A2: obfuscation augmentation,good-word k=50,-3.0584192439862545,-4.054982817869416,-1.2714776632302416,0.0055,0.0715
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",HyRoS - A2: obfuscation augmentation,good-word k=25 interleaved,-3.237113402061853,-4.605670103092789,-1.0652920962199381,0.0115,0.1265
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",HyRoS - A2: obfuscation augmentation,combined (30% + k=25),-0.21305841924399438,-1.615979381443304,2.439862542955329,0.9564999999999999,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",HyRoS - A2: obfuscation augmentation,held-out edits 50%,-0.07560137457045535,-0.44673539518900185,0.37800687285223233,1.0,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",HyRoS - A2: obfuscation augmentation,held-out edits 100%,0.12371134020617847,-0.27491408934707806,0.8591065292096189,0.4105,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",HyRoS - A2: obfuscation augmentation,held-out edits 30% + good-word k=25,-2.487972508591063,-3.9175257731958735,-0.3427835051546429,0.0305,0.27449999999999997
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",HyRoS - LR: all components,clean,-0.20618556701031965,-1.2371134020618513,1.855670103092777,0.9904999999999999,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",HyRoS - LR: all components,obfuscation 10%,0.20618556701029744,-0.7903780068728494,2.303264604810994,0.7805,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",HyRoS - LR: all components,obfuscation 20%,0.9209621993127026,-0.4123711340206171,2.8522336769759353,0.2995,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",HyRoS - LR: all components,obfuscation 30%,1.2577319587628755,-0.20618556701030855,3.67697594501718,0.1915,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",HyRoS - LR: all components,obfuscation 50%,2.542955326460461,0.3092783505154628,5.154639175257724,0.0085,0.11050000000000001
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",HyRoS - LR: all components,good-word k=10,-2.859106529209632,-8.35051546391753,5.189003436426109,0.6994999999999999,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",HyRoS - LR: all components,good-word k=25,-5.285223367697589,-13.53951890034365,7.38917525773195,0.6515,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",HyRoS - LR: all components,good-word k=50,-6.013745704467355,-12.165807560137456,3.0927835051546366,0.3155,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",HyRoS - LR: all components,good-word k=25 interleaved,-3.2027491408934683,-12.47508591065292,9.79381443298969,0.7835,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",HyRoS - LR: all components,combined (30% + k=25),7.9656357388316055,-1.375429553264611,21.822164948453608,0.1985,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",HyRoS - LR: all components,held-out edits 50%,-0.1099656357388401,-1.993127147766327,2.3711340206185594,0.9934999999999999,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",HyRoS - LR: all components,held-out edits 100%,0.8109965635738736,-1.2027491408934665,4.675257731958759,0.6064999999999999,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",HyRoS - LR: all components,held-out edits 30% + good-word k=25,-3.0034364261168345,-12.44072164948454,9.795532646048104,0.8105,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",LR+norm - LR: normalisation alone,clean,0.0,-0.13745704467353903,0.10309278350515427,1.0,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",LR+norm - LR: normalisation alone,obfuscation 10%,0.06872852233676952,-0.1718213058419238,0.5841924398625409,0.5045,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",LR+norm - LR: normalisation alone,obfuscation 20%,0.3436426116838476,0.0,0.6872852233676952,0.0575,0.6325000000000001
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",LR+norm - LR: normalisation alone,obfuscation 30%,0.37800687285223233,-0.10309278350515427,1.134020618556708,0.1445,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",LR+norm - LR: normalisation alone,obfuscation 50%,1.3402061855670055,0.27491408934707806,1.8900343642611728,0.0025,0.03
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",LR+norm - LR: normalisation alone,good-word k=10,-0.03436426116838476,-0.2405498281786933,0.20618556701030855,1.0,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",LR+norm - LR: normalisation alone,good-word k=25,0.1718213058419238,-0.37800687285223233,0.37800687285223233,0.8604999999999999,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",LR+norm - LR: normalisation alone,good-word k=50,0.0,-0.27491408934707817,0.20618556701031132,1.0,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",LR+norm - LR: normalisation alone,good-word k=25 interleaved,0.0,-0.3092783505154628,0.27491408934707806,1.0,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",LR+norm - LR: normalisation alone,combined (30% + k=25),6.907216494845364,5.463058419243989,8.006872852233682,0.0005,0.006500000000000001
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",LR+norm - LR: normalisation alone,held-out edits 50%,0.0,-0.13745704467353903,0.10309278350515427,1.0,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",LR+norm - LR: normalisation alone,held-out edits 100%,0.0,-0.1718213058419238,0.13745704467353903,1.0,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",LR+norm - LR: normalisation alone,held-out edits 30% + good-word k=25,-0.06872852233676952,-0.4123711340206171,0.37800687285223233,0.9844999999999999,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A2 - LR+norm: character n-grams after normalisation,clean,0.0,-0.9621993127147732,1.8900343642611617,0.9135,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A2 - LR+norm: character n-grams after normalisation,obfuscation 10%,0.1718213058419238,-0.9278350515463885,2.0274914089347007,0.7715,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A2 - LR+norm: character n-grams after normalisation,obfuscation 20%,0.4810996563573866,-0.6872852233676954,2.2345360824742246,0.5834999999999999,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A2 - LR+norm: character n-grams after normalisation,obfuscation 30%,0.6872852233676952,-0.5498281786941561,2.577319587628868,0.4305,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A2 - LR+norm: character n-grams after normalisation,obfuscation 50%,0.7560137457044647,-0.5498281786941561,3.0584192439862545,0.4645,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A2 - LR+norm: character n-grams after normalisation,good-word k=10,-1.134020618556697,-6.323024054982818,5.876288659793816,0.8915,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A2 - LR+norm: character n-grams after normalisation,good-word k=25,-2.577319587628868,-10.068728522336778,9.108247422680405,0.8394999999999999,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A2 - LR+norm: character n-grams after normalisation,good-word k=50,-2.9553264604811003,-8.763745704467356,5.051546391752576,0.6635,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A2 - LR+norm: character n-grams after normalisation,good-word k=25 interleaved,0.03436426116838476,-8.659793814432993,11.689003436426091,0.9255,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A2 - LR+norm: character n-grams after normalisation,combined (30% + k=25),1.271477663230236,-7.42353951890035,13.952749140893472,0.7274999999999999,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A2 - LR+norm: character n-grams after normalisation,held-out edits 50%,-0.03436426116838476,-1.8900343642611617,2.268041237113405,0.9584999999999999,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A2 - LR+norm: character n-grams after normalisation,held-out edits 100%,0.6872852233676952,-1.271477663230236,4.364261168384886,0.6555,1.0
+"cluster bootstrap, HourAhead as one cluster, matched 1.5%",A2 - LR+norm: character n-grams after normalisation,held-out edits 30% + good-word k=25,-0.44673539518900185,-9.312714776632303,11.27319587628865,0.9734999999999999,1.0
+recall averaged over matched FPR 0.5-3%,A1 - LR: character n-grams,clean,0.3592627303967477,-0.31560449859418527,1.2465635738831582,0.315,1.0
+recall averaged over matched FPR 0.5-3%,A1 - LR: character n-grams,obfuscation 10%,0.671665104654795,-0.10317088409871861,1.70602936582318,0.093,0.744
+recall averaged over matched FPR 0.5-3%,A1 - LR: character n-grams,obfuscation 20%,0.9278350515463885,0.1155107778818948,2.0119493908153654,0.031,0.279
+recall averaged over matched FPR 0.5-3%,A1 - LR: character n-grams,obfuscation 30%,1.3527022805373323,0.4871915026554155,2.6367541393314484,0.003,0.033
+recall averaged over matched FPR 0.5-3%,A1 - LR: character n-grams,obfuscation 50%,2.030615432677285,0.8434083099031434,3.6519837550765266,0.001,0.013000000000000001
+recall averaged over matched FPR 0.5-3%,A1 - LR: character n-grams,good-word k=10,-1.1558887847547883,-3.0652139956263857,1.2247735082786428,0.309,1.0
+recall averaged over matched FPR 0.5-3%,A1 - LR: character n-grams,good-word k=25,-2.30865354576697,-5.101608872227442,0.47922524211182205,0.105,0.744
+recall averaged over matched FPR 0.5-3%,A1 - LR: character n-grams,good-word k=50,-3.8456732271165333,-5.839112777257107,-1.901202749140896,0.001,0.013000000000000001
+recall averaged over matched FPR 0.5-3%,A1 - LR: character n-grams,good-word k=25 interleaved,-0.5841924398625742,-3.4552483598875474,2.256638550452969,0.663,1.0
+recall averaged over matched FPR 0.5-3%,A1 - LR: character n-grams,combined (30% + k=25),2.164948453608245,-0.7537488284910899,5.1158231802561644,0.149,0.8939999999999999
+recall averaged over matched FPR 0.5-3%,A1 - LR: character n-grams,held-out edits 50%,0.33739456419868974,-0.5998906591690056,1.568416119962512,0.473,1.0
+recall averaged over matched FPR 0.5-3%,A1 - LR: character n-grams,held-out edits 100%,1.502655420181187,0.1496407372695968,3.4490784129959207,0.023,0.22999999999999998
+recall averaged over matched FPR 0.5-3%,A1 - LR: character n-grams,held-out edits 30% + good-word k=25,-1.3683223992502436,-4.230084348641071,1.590909090909102,0.365,1.0
+recall averaged over matched FPR 0.5-3%,A2 - A1: normalisation after character n-grams,clean,-0.02499218994064245,-0.050062480474860054,0.006248047485157837,0.137,0.615
+recall averaged over matched FPR 0.5-3%,A2 - A1: normalisation after character n-grams,obfuscation 10%,0.062480474851600576,-0.07497656982192735,0.20306154326772433,0.365,0.662
+recall averaged over matched FPR 0.5-3%,A2 - A1: normalisation after character n-grams,obfuscation 20%,0.1811933770696661,-0.05310840362386937,0.4093252108715971,0.123,0.615
+recall averaged over matched FPR 0.5-3%,A2 - A1: normalisation after character n-grams,obfuscation 30%,0.1312089971883812,-0.13745704467353903,0.4124492346141816,0.331,0.662
+recall averaged over matched FPR 0.5-3%,A2 - A1: normalisation after character n-grams,obfuscation 50%,0.5404561074664138,0.19353327085286393,0.9310371758825375,0.003,0.03
+recall averaged over matched FPR 0.5-3%,A2 - A1: normalisation after character n-grams,good-word k=10,-0.07185254607935398,-0.14370509215870825,-0.009372071227742307,0.027,0.162
+recall averaged over matched FPR 0.5-3%,A2 - A1: normalisation after character n-grams,good-word k=25,-0.1905654482974084,-0.2499218994064356,-0.06872852233678034,0.001,0.013000000000000001
+recall averaged over matched FPR 0.5-3%,A2 - A1: normalisation after character n-grams,good-word k=50,-0.0624804748516089,-0.10621680724773319,0.01562011871290292,0.163,0.615
+recall averaged over matched FPR 0.5-3%,A2 - A1: normalisation after character n-grams,good-word k=25 interleaved,-0.24367385192126667,-0.303030303030305,-0.09684473601999644,0.001,0.013000000000000001
+recall averaged over matched FPR 0.5-3%,A2 - A1: normalisation after character n-grams,combined (30% + k=25),5.064042486722908,4.451733833177151,5.7794439237737985,0.001,0.013000000000000001
+recall averaged over matched FPR 0.5-3%,A2 - A1: normalisation after character n-grams,held-out edits 50%,-0.06560449859419615,-0.08434864104966966,-0.012496094970315674,0.009000000000000001,0.07200000000000001
+recall averaged over matched FPR 0.5-3%,A2 - A1: normalisation after character n-grams,held-out edits 100%,-0.06560449859419615,-0.13433302093095456,-0.018744142455484614,0.009000000000000001,0.07200000000000001
+recall averaged over matched FPR 0.5-3%,A2 - A1: normalisation after character n-grams,held-out edits 30% + good-word k=25,-0.15620118712902364,-0.25304592314901453,-0.05623242736644274,0.003,0.03
+recall averaged over matched FPR 0.5-3%,HyRoS - A2: obfuscation augmentation,clean,-0.14183067791313508,-0.36551077788191666,0.00945017182130657,0.085,0.42500000000000004
+recall averaged over matched FPR 0.5-3%,HyRoS - A2: obfuscation augmentation,obfuscation 10%,0.06185567010308368,-0.15307716338643945,0.21868166198062447,0.853,1.0
+recall averaged over matched FPR 0.5-3%,HyRoS - A2: obfuscation augmentation,obfuscation 20%,0.16682286785379974,-0.018744142455484614,0.3186504217432051,0.105,0.42500000000000004
+recall averaged over matched FPR 0.5-3%,HyRoS - A2: obfuscation augmentation,obfuscation 30%,0.30677913152140635,0.10309278350515427,0.4779756326148024,0.001,0.013000000000000001
+recall averaged over matched FPR 0.5-3%,HyRoS - A2: obfuscation augmentation,obfuscation 50%,0.5579506404248646,0.30295220243675175,0.7935801312090198,0.001,0.013000000000000001
+recall averaged over matched FPR 0.5-3%,HyRoS - A2: obfuscation augmentation,good-word k=10,-1.4014370509215834,-2.161980631052818,-0.6028584817244718,0.001,0.013000000000000001
+recall averaged over matched FPR 0.5-3%,HyRoS - A2: obfuscation augmentation,good-word k=25,-2.9665729459544044,-4.073961262105601,-1.6334739144017465,0.001,0.013000000000000001
+recall averaged over matched FPR 0.5-3%,HyRoS - A2: obfuscation augmentation,good-word k=50,-2.694782880349891,-3.6615120274914066,-1.7837394564198643,0.001,0.013000000000000001
+recall averaged over matched FPR 0.5-3%,HyRoS - A2: obfuscation augmentation,good-word k=25 interleaved,-3.177756950952837,-4.32997500781005,-1.7929553264605051,0.001,0.013000000000000001
+recall averaged over matched FPR 0.5-3%,HyRoS - A2: obfuscation augmentation,combined (30% + k=25),0.2792877225866852,-0.9404092471102906,1.8092783505154628,0.827,1.0
+recall averaged over matched FPR 0.5-3%,HyRoS - A2: obfuscation augmentation,held-out edits 50%,0.0024992189940564735,-0.28741018431739374,0.26554201811933575,0.765,1.0
+recall averaged over matched FPR 0.5-3%,HyRoS - A2: obfuscation augmentation,held-out edits 100%,0.4511090284286201,0.034129959387691214,0.8466104342393033,0.031,0.186
+recall averaged over matched FPR 0.5-3%,HyRoS - A2: obfuscation augmentation,held-out edits 30% + good-word k=25,-2.4054982817869384,-3.5459231490159224,-1.0900499843798876,0.001,0.013000000000000001
+recall averaged over matched FPR 0.5-3%,HyRoS - LR: all components,clean,0.19243986254297019,-0.5187441424554845,1.0748203686347986,0.581,1.0
+recall averaged over matched FPR 0.5-3%,HyRoS - LR: all components,obfuscation 10%,0.7960012496094793,-0.03795688847234521,1.827944392377383,0.065,0.195
+recall averaged over matched FPR 0.5-3%,HyRoS - LR: all components,obfuscation 20%,1.2758512964698543,0.37488284910965897,2.4150265542018046,0.003,0.027
+recall averaged over matched FPR 0.5-3%,HyRoS - LR: all components,obfuscation 30%,1.7906904092471199,0.8548890971571422,3.114651671352686,0.001,0.013000000000000001
+recall averaged over matched FPR 0.5-3%,HyRoS - LR: all components,obfuscation 50%,3.1290221805685636,1.7617931896282362,4.898859731333943,0.001,0.013000000000000001
+recall averaged over matched FPR 0.5-3%,HyRoS - LR: all components,good-word k=10,-2.6291783817557257,-4.936348016244945,-0.29646985317090035,0.025,0.11499999999999999
+recall averaged over matched FPR 0.5-3%,HyRoS - LR: all components,good-word k=25,-5.465791940018782,-8.681740081224637,-2.3859731333958374,0.005,0.04
+recall averaged over matched FPR 0.5-3%,HyRoS - LR: all components,good-word k=50,-6.6029365823180335,-8.907606997813184,-4.344814120587319,0.001,0.013000000000000001
+recall averaged over matched FPR 0.5-3%,HyRoS - LR: all components,good-word k=25 interleaved,-4.005623242736678,-7.244845360824753,-1.0794283036551258,0.019,0.11399999999999999
+recall averaged over matched FPR 0.5-3%,HyRoS - LR: all components,combined (30% + k=25),7.508278662917839,4.051780693533264,10.728834739144025,0.001,0.013000000000000001
+recall averaged over matched FPR 0.5-3%,HyRoS - LR: all components,held-out edits 50%,0.27428928459855006,-0.7060293658231696,1.4531396438612887,0.615,1.0
+recall averaged over matched FPR 0.5-3%,HyRoS - LR: all components,held-out edits 100%,1.888159950015611,0.3998750390502903,3.8023273976882037,0.007,0.049
+recall averaged over matched FPR 0.5-3%,HyRoS - LR: all components,held-out edits 30% + good-word k=25,-3.9300218681662056,-7.185957513277096,-0.8246641674476698,0.023,0.11499999999999999
+recall averaged over matched FPR 0.5-3%,LR+norm - LR: normalisation alone,clean,0.0,-0.04686035613870043,0.02186816619805798,0.681,1.0
+recall averaged over matched FPR 0.5-3%,LR+norm - LR: normalisation alone,obfuscation 10%,0.21555763823805085,0.0499843798812849,0.37488284910964786,0.013000000000000001,0.117
+recall averaged over matched FPR 0.5-3%,LR+norm - LR: normalisation alone,obfuscation 20%,0.35613870665417435,0.10613870665417413,0.5779443923773722,0.003,0.03
+recall averaged over matched FPR 0.5-3%,LR+norm - LR: normalisation alone,obfuscation 30%,0.5560762261793251,0.23422368009996006,0.8435645110902723,0.001,0.013000000000000001
+recall averaged over matched FPR 0.5-3%,LR+norm - LR: normalisation alone,obfuscation 50%,1.3245860668541054,0.7496875976257422,1.9651671352702182,0.001,0.013000000000000001
+recall averaged over matched FPR 0.5-3%,LR+norm - LR: normalisation alone,good-word k=10,-0.006248047485157837,-0.0905966885348275,0.0499843798812849,0.645,1.0
+recall averaged over matched FPR 0.5-3%,LR+norm - LR: normalisation alone,good-word k=25,0.028116213683215818,-0.10941893158388755,0.07497656982192763,0.775,1.0
+recall averaged over matched FPR 0.5-3%,LR+norm - LR: normalisation alone,good-word k=50,0.021868166198063532,-0.09067478912839752,0.05310840362386937,0.673,1.0
+recall averaged over matched FPR 0.5-3%,LR+norm - LR: normalisation alone,good-word k=25 interleaved,-0.024992189940653553,-0.128084973445797,0.0499843798812849,0.379,1.0
+recall averaged over matched FPR 0.5-3%,LR+norm - LR: normalisation alone,combined (30% + k=25),6.323024054982823,5.707591377694476,6.932442986566721,0.001,0.013000000000000001
+recall averaged over matched FPR 0.5-3%,LR+norm - LR: normalisation alone,held-out edits 50%,0.018744142455495716,-0.05935645110902721,0.02819431427681283,0.589,1.0
+recall averaged over matched FPR 0.5-3%,LR+norm - LR: normalisation alone,held-out edits 100%,-0.012496094970326777,-0.10621680724772764,0.018744142455484614,0.281,1.0
+recall averaged over matched FPR 0.5-3%,LR+norm - LR: normalisation alone,held-out edits 30% + good-word k=25,-0.02811621368322692,-0.15307716338644486,0.040612308653542734,0.239,1.0
+recall averaged over matched FPR 0.5-3%,A2 - LR+norm: character n-grams after normalisation,clean,0.33427054045610527,-0.3250546704154922,1.2559356451109,0.327,1.0
+recall averaged over matched FPR 0.5-3%,A2 - LR+norm: character n-grams after normalisation,obfuscation 10%,0.5185879412683447,-0.1718213058419238,1.4688378631677534,0.129,0.903
+recall averaged over matched FPR 0.5-3%,A2 - LR+norm: character n-grams after normalisation,obfuscation 20%,0.7528897219618802,0.01562011871291097,1.7901437050921565,0.047,0.423
+recall averaged over matched FPR 0.5-3%,A2 - LR+norm: character n-grams after normalisation,obfuscation 30%,0.9278350515463885,0.2092314901593176,2.0713839425179565,0.011,0.121
+recall averaged over matched FPR 0.5-3%,A2 - LR+norm: character n-grams after normalisation,obfuscation 50%,1.2464854732895936,0.4090909090909145,2.4742268041237025,0.001,0.013000000000000001
+recall averaged over matched FPR 0.5-3%,A2 - LR+norm: character n-grams after normalisation,good-word k=10,-1.2214932833489844,-3.1590128084973625,1.1436269915651214,0.287,1.0
+recall averaged over matched FPR 0.5-3%,A2 - LR+norm: character n-grams after normalisation,good-word k=25,-2.527335207747594,-5.264136207435188,0.4252577319587441,0.097,0.776
+recall averaged over matched FPR 0.5-3%,A2 - LR+norm: character n-grams after normalisation,good-word k=50,-3.9300218681662056,-5.854654795376449,-1.893002186816623,0.001,0.013000000000000001
+recall averaged over matched FPR 0.5-3%,A2 - LR+norm: character n-grams after normalisation,good-word k=25 interleaved,-0.8028741018431873,-3.5686504217432184,2.1587785067166347,0.579,1.0
+recall averaged over matched FPR 0.5-3%,A2 - LR+norm: character n-grams after normalisation,combined (30% + k=25),0.9059668853483305,-1.880662293033442,3.8412214932833435,0.481,1.0
+recall averaged over matched FPR 0.5-3%,A2 - LR+norm: character n-grams after normalisation,held-out edits 50%,0.2530459231489979,-0.6156669790690567,1.5246016869728203,0.503,1.0
+recall averaged over matched FPR 0.5-3%,A2 - LR+norm: character n-grams after normalisation,held-out edits 100%,1.4495470165573177,0.08739456419868952,3.4215870040612306,0.031,0.31
+recall averaged over matched FPR 0.5-3%,A2 - LR+norm: character n-grams after normalisation,held-out edits 30% + good-word k=25,-1.4964073726960403,-4.323883161512021,1.5075757575757425,0.317,1.0

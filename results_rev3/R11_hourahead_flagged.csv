@@ -1,0 +1,23 @@
+target_FPR,model,ham_flagged,hourahead_flagged
+0.015,NB (word),46,0
+0.015,SVM (word),46,0
+0.015,LR (word),46,0
+0.015,LR (word+norm),46,0
+0.015,LR (word+char),46,17
+0.015,LR (word+char+norm),46,17
+0.015,HyRoS s0,46,16
+0.015,HyRoS s1,46,19
+0.015,HyRoS s2,46,16
+0.015,HyRoS s3,46,20
+0.015,HyRoS s4,46,20
+0.01,NB (word),31,0
+0.01,SVM (word),31,0
+0.01,LR (word),31,0
+0.01,LR (word+norm),31,0
+0.01,LR (word+char),31,5
+0.01,LR (word+char+norm),31,5
+0.01,HyRoS s0,31,5
+0.01,HyRoS s1,31,7
+0.01,HyRoS s2,31,5
+0.01,HyRoS s3,31,7
+0.01,HyRoS s4,31,6

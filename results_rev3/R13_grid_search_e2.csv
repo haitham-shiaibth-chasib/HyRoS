@@ -1,0 +1,7 @@
+model,C,mean_F1_3fold,n_fit
+LR (word),1.0,0.986044,21697
+LR (word),10.0,0.990168,21697
+LR (word),100.0,0.991395,21697
+LR (word+char+norm),1.0,0.988437,21697
+LR (word+char+norm),10.0,0.991442,21697
+LR (word+char+norm),100.0,0.992291,21697

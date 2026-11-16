@@ -1,0 +1,6 @@
+check,ham_flagged,spam_flagged,new_beyond_prefix25
+prefix25,0,464,0
+exact,0,93,4
+jaccard50,0,1036,587
+containment80,0,1000,555
+any,0,1107,643

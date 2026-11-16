@@ -2,14 +2,13 @@
 """
 HyRoS: Hybrid, Robust, lightweight Spam filter.
 
-Reproducible experiments for the paper
-  "Beyond 99% Accuracy: Temporal Drift, Cross-Corpus Shift and Evasion Robustness
-   of Lightweight TF-IDF Spam Filters"
+Reproducible experiments for a paper under review on chronological, cross-corpus and
+evasion stress tests of lightweight spam filters.
 
 It (1) reproduces the word-TF-IDF baselines of Hadi & Adil (WJCMS 5(3), 2026,
 doi:10.31185/wjcms.562) on a random stratified split, then evaluates the same
 models and the proposed HyRoS model under
-  E2  a class-wise chronological split (older e-mails -> train, newer -> test),
+  E2  a class-wise chronological stress test (older e-mails -> train, newer -> test),
       with a recency-calibrated decision threshold,
   E3  cross-corpus transfer (train Enron-Spam -> test SpamAssassin) and
       few-shot threshold recalibration on the new mailbox,

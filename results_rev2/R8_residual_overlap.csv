@@ -1,0 +1,9 @@
+check,ham,spam
+exact Jaccard >= 0.5,0.0,15.0
+exact Jaccard >= 0.3,2.0,143.0
+exact containment >= 0.8,0.0,13.0
+Jaccard >= 0.3 or containment,2.0,154.0
+"recall at 1% FPR, LR (word): all strict spam / without residual overlap",54.56,50.55
+"recall at 1% FPR, LR (word+char): all strict spam / without residual overlap",60.68,56.57
+"recall at 1% FPR, LR (word+char+norm): all strict spam / without residual overlap",61.68,58.03
+"recall at 1% FPR, HyRoS: all strict spam / without residual overlap",62.96,58.98

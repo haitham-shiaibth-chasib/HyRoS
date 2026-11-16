@@ -1,0 +1,201 @@
+R0 [('rows in the single-file release', 33716), ('exact duplicates of subject+body removed', 30494), ('empty messages removed, exact text duplicates removed', 30462), ('empty messages removed, duplicates after whitespace normalisation', 30137), ('empty messages removed, duplicates after lower-casing and whitespace normalisation (this study)', 30137), ('empty messages removed, duplicates after keeping letters and digits only', 30076), ('missing bodies dropped, duplicates of the body text removed', 29779)]
+Enron-Spam: 30137
+SpamAssassin after parsing and within-corpus de-duplication: 5919
+R2 minhash built in 13s
+R2 containment SA in Enron done (38s)
+R2 containment Enron in SA done (53s)
+        check  ham_flagged  spam_flagged  new_beyond_prefix25
+     prefix25            0           464                    0
+        exact            0            93                    4
+    jaccard50            0          1036                  587
+containment80            0          1000                  555
+          any            0          1107                  643
+SA prefix-only set 5455 (ham 4110, spam 1345); strict set 4812 (ham 4110, spam 702, hard ham 250)
+R1 window Jul-Sep 2002: 4309 (ham 3151, spam 1158)
+R1 joint chronological: train to 2002-09-12 12:39:45, test from 2002-09-12 12:39:47, test ham 686, spam 176
+                                                         FPR_mean  FPR_std  Recall_mean  Recall_std  AUC_mean  AUC_std
+split                    model               threshold                                                                
+joint chronological      NB (word)           default         0.29      NaN        95.45         NaN     99.91      NaN
+                                             calibrated     11.95      NaN       100.00         NaN     99.91      NaN
+                         SVM (word)          default         0.58      NaN        96.59         NaN     99.73      NaN
+                                             calibrated      5.39      NaN        98.86         NaN     99.73      NaN
+                         LR (word)           default         0.58      NaN        96.02         NaN     99.72      NaN
+                                             calibrated      5.10      NaN        98.86         NaN     99.72      NaN
+                         LR (word+char)      default         0.73      NaN        97.16         NaN     99.85      NaN
+                                             calibrated      8.75      NaN        99.43         NaN     99.85      NaN
+                         LR (word+char+norm) default         0.73      NaN        97.73         NaN     99.86      NaN
+                                             calibrated      9.04      NaN        99.43         NaN     99.86      NaN
+                         HyRoS               default         1.17      NaN        98.86         NaN     99.86      NaN
+                                             calibrated     13.12      NaN        99.43         NaN     99.86      NaN
+class-wise chronological NB (word)           default         0.32      NaN        90.95         NaN     99.04      NaN
+                                             calibrated     15.85      NaN        98.28         NaN     99.04      NaN
+                         SVM (word)          default         0.48      NaN        90.95         NaN     99.05      NaN
+                                             calibrated      7.61      NaN        96.55         NaN     99.05      NaN
+                         LR (word)           default         0.63      NaN        91.81         NaN     99.04      NaN
+                                             calibrated     11.41      NaN        96.98         NaN     99.04      NaN
+                         LR (word+char)      default         0.32      NaN        92.67         NaN     99.34      NaN
+                                             calibrated     16.32      NaN        98.28         NaN     99.34      NaN
+                         LR (word+char+norm) default         0.32      NaN        92.67         NaN     99.34      NaN
+                                             calibrated     16.01      NaN        98.28         NaN     99.34      NaN
+                         HyRoS               default         1.11      NaN        93.97         NaN     99.32      NaN
+                                             calibrated     14.26      NaN        98.71         NaN     99.32      NaN
+random                   NB (word)           default         0.41     0.18        96.21        2.41     99.86     0.14
+                                             calibrated      1.40     1.25        98.02        2.12     99.86     0.14
+                         SVM (word)          default         0.48     0.11        96.03        1.86     99.92     0.05
+                                             calibrated      1.14     1.26        96.72        2.87     99.92     0.05
+                         LR (word)           default         0.51     0.13        96.21        1.79     99.92     0.05
+                                             calibrated      1.33     1.68        96.55        2.38     99.92     0.05
+                         LR (word+char)      default         0.54     0.18        96.98        1.72     99.93     0.04
+                                             calibrated      1.27     1.08        98.28        1.33     99.93     0.04
+                         LR (word+char+norm) default         0.57     0.24        96.72        2.04     99.93     0.04
+                                             calibrated      1.24     1.08        98.19        1.44     99.93     0.04
+                         HyRoS               default         0.63     0.30        97.59        1.63     99.93     0.04
+                                             calibrated      1.43     1.33        98.10        1.24     99.93     0.04
+R3 NB (word) done
+R3 SVM (word) done
+R3 LR (word) done
+R3 LR (word+char) done
+R3 LR (word+char+norm) done
+R3 HyRoS done
+              model  Accuracy  Precision  Recall    FPR  FPR_hard_ham    AUC
+          NB (word)    0.4198     0.1973  0.9701 0.6742         0.776 0.8466
+         SVM (word)    0.3462     0.1809  0.9872 0.7633         0.876 0.9332
+          LR (word)    0.3512     0.1819  0.9858 0.7572         0.880 0.9323
+     LR (word+char)    0.3448     0.1813  0.9929 0.7659         0.900 0.9357
+LR (word+char+norm)    0.3414     0.1807  0.9943 0.7701         0.904 0.9394
+              HyRoS    0.3219     0.1766  0.9957 0.7932         0.908 0.9404
+                           FPR_mean  FPR_lo  FPR_hi  FPR_share_above_2pct  Recall_mean  Recall_lo  Recall_hi  Precision_mean  Precision_lo  Precision_hi  FPRhard_mean
+model               n_ham                                                                                                                                             
+NB (word)           25         3.48    0.17   12.30                  56.5        34.90      19.94      58.13           68.87         43.66         94.81          4.83
+                    50         2.10    0.07    6.76                  40.0        30.10      12.22      46.61           74.23         46.03         96.51          3.10
+                    100        1.04    0.00    3.42                  14.5        25.62       0.00      36.78           80.92          0.00         97.14          2.15
+                    200        1.02    0.05    2.48                   7.5        26.26      12.54      33.05           83.20         69.75         97.78          2.19
+                    500        1.02    0.30    2.03                   3.0        27.05      23.36      31.65           84.47         75.24         93.71          2.23
+SVM (word)          25         4.04    0.07   13.55                  58.5        63.73      22.36      86.49           78.67         52.32         98.12         14.86
+                    50         1.86    0.05    7.24                  31.5        52.89      16.61      80.52           86.61         65.81         98.34          9.03
+                    100        1.10    0.02    4.05                  18.0        45.11      14.39      73.96           90.33         76.19         99.02          6.38
+                    200        0.93    0.10    2.28                   5.5        46.30      24.50      63.39           90.97         83.33         97.74          6.01
+                    500        0.96    0.25    2.08                   3.5        48.61      33.19      59.86           91.26         84.84         96.28          6.30
+LR (word)           25         3.95    0.07   12.95                  58.5        65.10      28.92      85.19           79.15         53.06         98.54         14.27
+                    50         1.93    0.05    8.02                  31.5        55.83      19.37      81.64           86.77         63.78         98.57          9.07
+                    100        1.10    0.02    3.90                  18.5        48.32      19.09      73.24           90.76         76.69         99.26          6.34
+                    200        0.91    0.13    2.43                   4.5        49.29      29.48      67.52           91.58         83.30         97.65          5.92
+                    500        0.97    0.28    1.97                   1.5        52.03      37.75      61.97           91.68         85.96         96.36          6.27
+LR (word+char)      25         4.06    0.07   13.56                  62.0        68.52      36.04      85.92           79.01         52.13         98.83         14.81
+                    50         2.10    0.05    8.25                  37.0        62.24      35.19      80.09           86.68         62.66         99.20          9.44
+                    100        1.06    0.02    3.80                  15.0        56.04      22.36      73.51           91.87         77.21         99.37          5.90
+                    200        1.04    0.10    2.74                   9.5        58.66      39.74      69.95           91.71         82.09         98.59          6.10
+                    500        1.02    0.25    2.11                   5.5        59.76      51.71      66.10           92.24         85.92         97.58          6.04
+LR (word+char+norm) 25         4.13    0.07   15.08                  63.0        69.77      36.73      88.32           79.00         50.15         98.86         14.86
+                    50         2.14    0.05    7.86                  36.5        63.50      35.90      80.69           86.67         63.97         99.21          9.46
+                    100        1.08    0.02    3.80                  14.5        57.10      22.22      73.94           91.89         77.32         99.36          5.96
+                    200        1.04    0.10    2.66                   9.0        59.68      41.45      71.66           91.87         82.85         98.64          6.11
+                    500        1.00    0.25    2.05                   3.5        60.80      52.71      67.24           92.46         86.44         97.63          6.05
+HyRoS               25         4.18    0.07   14.67                  63.5        70.37      36.43      87.89           78.91         50.73         98.85         14.09
+                    50         2.15    0.05    7.73                  37.5        64.10      34.90      81.38           86.68         64.54         99.19          9.00
+                    100        1.06    0.02    3.49                  14.0        57.64      22.08      74.36           92.02         78.85         99.36          5.58
+                    200        1.00    0.13    2.66                   7.5        60.03      43.02      71.66           92.18         82.85         98.38          5.49
+                    500        1.00    0.25    2.08                   4.5        61.38      52.56      69.23           92.59         86.63         97.62          5.53
+                                      FPR  Recall  CI_lo  CI_hi
+model                                                          
+NB (word)                             1.0   27.35  24.36  30.77
+SVM (word)                            1.0   50.57  46.87  54.27
+LR (word)                             1.0   54.56  51.00  58.27
+LR (word+char)                        1.0   60.68  57.12  64.39
+LR (word+char+norm)                   1.0   61.68  57.98  65.24
+HyRoS                                 1.0   62.68  59.12  66.38
+A1 - LR: character n-grams            NaN    6.13   3.56   8.83
+A2 - A1: normalisation                NaN    1.00  -0.28   2.28
+HyRoS - A2: obfuscation augmentation  NaN    1.00   0.28   1.85
+HyRoS - LR: all components            NaN    8.12   5.69  10.68
+R4 NB (word) scored (00:50:41)
+R4 SVM (word) scored (00:51:07)
+R4 LR (word) scored (00:51:32)
+R4 LR (word+char) scored (00:53:33)
+R4 LR (word+char+norm) scored (00:55:59)
+R4 HyRoS scored (00:58:36)
+R4 HyRoS+GW scored (01:01:25)
+R4 Monotone top-3 scored (01:01:45)
+model                       NB (word)  SVM (word)  LR (word)  LR (word+char)  LR (word+char+norm)  HyRoS  HyRoS+GW  Monotone top-3
+attack                                                                                                                            
+clean                            97.6        97.6       97.4            97.4                 97.4   97.3      94.8            25.3
+obfuscation 10%                  97.6        97.5       97.1            97.4                 97.4   97.5      95.3            24.7
+obfuscation 20%                  97.4        97.1       96.7            97.3                 97.5   97.7      95.6            24.4
+obfuscation 30%                  97.6        96.9       96.5            97.4                 97.5   97.8      95.9            23.8
+obfuscation 50%                  97.7        96.3       95.5            97.1                 97.6   98.3      96.2            23.0
+good-word k=10                   71.4        86.2       85.6            84.5                 84.4   83.7      83.4            25.3
+good-word k=25                   34.4        58.1       59.6            57.4                 57.1   55.7      61.8            25.3
+good-word k=50                   18.2        24.6       26.3            23.4                 23.3   21.0      28.6            25.3
+good-word k=25 interleaved       31.5        55.4       56.2            56.3                 56.2   54.2      60.6            25.3
+combined (30% + k=25)            27.8        46.7       48.0            51.1                 56.2   57.7      63.2            23.6
+ target_FPR                           comparison                     attack  diff_pp  CI_lo_pp  CI_hi_pp  both_detect  first_only  second_only  neither      p  p_holm
+      0.015           A1 - LR: character n-grams                      clean   0.0000   -0.3780    0.3445         2818          15           15       62 1.0000  1.0000
+      0.015           A1 - LR: character n-grams            obfuscation 10%   0.2405   -0.1718    0.6529         2811          23           16       60 0.3368  1.0000
+      0.015           A1 - LR: character n-grams            obfuscation 20%   0.6186    0.1718    1.0997         2799          33           15       63 0.0133  0.0664
+      0.015           A1 - LR: character n-grams            obfuscation 30%   0.9278    0.4467    1.4089         2794          40           13       63 0.0003  0.0019
+      0.015           A1 - LR: character n-grams            obfuscation 50%   1.6495    0.9966    2.3024         2758          69           21       62 0.0000  0.0000
+      0.015           A1 - LR: character n-grams             good-word k=10  -1.0997   -2.0275   -0.2062         2381          78          110      341 0.0235  0.0940
+      0.015           A1 - LR: character n-grams             good-word k=25  -2.1306   -3.2990   -0.9278         1538         133          195     1044 0.0007  0.0044
+      0.015           A1 - LR: character n-grams             good-word k=50  -2.8522   -3.7801   -1.8900          620          62          145     2083 0.0000  0.0000
+      0.015           A1 - LR: character n-grams good-word k=25 interleaved   0.1375   -1.1340    1.3746         1474         165          161     1110 0.8681  1.0000
+      0.015           A1 - LR: character n-grams      combined (30% + k=25)   3.1615    1.8213    4.4674         1247         241          149     1273 0.0000  0.0000
+      0.015               A2 - A1: normalisation                      clean   0.0000   -0.1031    0.1031         2832           1            1       76 1.0000  1.0000
+      0.015               A2 - A1: normalisation            obfuscation 10%   0.0000   -0.2062    0.2062         2829           5            5       71 1.0000  1.0000
+      0.015               A2 - A1: normalisation            obfuscation 20%   0.2062   -0.0687    0.4811         2826          12            6       66 0.2379  1.0000
+      0.015               A2 - A1: normalisation            obfuscation 30%   0.1375   -0.2062    0.5155         2822          16           12       60 0.5716  1.0000
+      0.015               A2 - A1: normalisation            obfuscation 50%   0.4467    0.0344    0.8591         2814          26           13       57 0.0533  0.4260
+      0.015               A2 - A1: normalisation             good-word k=10  -0.0687   -0.2405    0.1031         2455           2            4      449 0.6875  1.0000
+      0.015               A2 - A1: normalisation             good-word k=25  -0.2749   -0.4811   -0.0687         1662           1            9     1238 0.0215  0.1934
+      0.015               A2 - A1: normalisation             good-word k=50  -0.1031   -0.2405    0.0000          679           0            3     2228 0.2500  1.0000
+      0.015               A2 - A1: normalisation good-word k=25 interleaved  -0.1031   -0.2405    0.0000         1636           0            3     1271 0.2500  1.0000
+      0.015               A2 - A1: normalisation      combined (30% + k=25)   5.0172    4.1581    5.9107         1473         161           15     1261 0.0000  0.0000
+      0.015 HyRoS - A2: obfuscation augmentation                      clean  -0.0687   -0.2405    0.1031         2829           2            4       75 0.6875  1.0000
+      0.015 HyRoS - A2: obfuscation augmentation            obfuscation 10%   0.0687   -0.1375    0.2405         2831           5            3       71 0.7266  1.0000
+      0.015 HyRoS - A2: obfuscation augmentation            obfuscation 20%   0.1375    0.0344    0.2749         2838           4            0       68 0.1250  0.3750
+      0.015 HyRoS - A2: obfuscation augmentation            obfuscation 30%   0.2405    0.0687    0.4467         2837           8            1       64 0.0391  0.1562
+      0.015 HyRoS - A2: obfuscation augmentation            obfuscation 50%   0.7216    0.4467    1.0309         2840          21            0       49 0.0000  0.0000
+      0.015 HyRoS - A2: obfuscation augmentation             good-word k=10  -0.7216   -1.0997   -0.3436         2431           5           26      448 0.0002  0.0010
+      0.015 HyRoS - A2: obfuscation augmentation             good-word k=25  -1.4433   -1.9596   -0.9966         1615           6           48     1241 0.0000  0.0000
+      0.015 HyRoS - A2: obfuscation augmentation             good-word k=50  -2.3368   -2.9210   -1.7869          609           2           70     2229 0.0000  0.0000
+      0.015 HyRoS - A2: obfuscation augmentation good-word k=25 interleaved  -1.9931   -2.5086   -1.5464         1578           0           58     1274 0.0000  0.0000
+      0.015 HyRoS - A2: obfuscation augmentation      combined (30% + k=25)   1.5464    0.9966    2.0962         1622          57           12     1219 0.0000  0.0000
+      0.015           HyRoS - LR: all components                      clean  -0.0687   -0.4467    0.3093         2817          14           16       63 0.8555  0.8555
+      0.015           HyRoS - LR: all components            obfuscation 10%   0.3093   -0.1375    0.7560         2810          26           17       57 0.2221  0.4441
+      0.015           HyRoS - LR: all components            obfuscation 20%   0.9622    0.5155    1.4433         2805          37            9       59 0.0000  0.0002
+      0.015           HyRoS - LR: all components            obfuscation 30%   1.3058    0.7904    1.7869         2798          47            9       56 0.0000  0.0000
+      0.015           HyRoS - LR: all components            obfuscation 50%   2.8179    2.1649    3.4708         2773          88            6       43 0.0000  0.0000
+      0.015           HyRoS - LR: all components             good-word k=10  -1.8900   -2.8522   -0.9278         2362          74          129      345 0.0001  0.0006
+      0.015           HyRoS - LR: all components             good-word k=25  -3.8488   -5.0515   -2.5773         1505         116          228     1061 0.0000  0.0000
+      0.015           HyRoS - LR: all components             good-word k=50  -5.2921   -6.3574   -4.2612          558          53          207     2092 0.0000  0.0000
+      0.015           HyRoS - LR: all components good-word k=25 interleaved  -1.9588   -3.1615   -0.7216         1439         139          196     1136 0.0022  0.0065
+      0.015           HyRoS - LR: all components      combined (30% + k=25)   9.7251    8.3505   11.1349         1308         371           88     1143 0.0000  0.0000
+                    attack  n_paired  both_correct  LR_only  HyRoS_only  both_wrong      p  Recall_LR  Recall_HyRoS  Recall_diff_pp  Recall_diff_lo  Recall_diff_hi  FPR_LR  FPR_HyRoS  p_holm
+                     clean      6028          5832       74          31          91 0.0000     0.9749        0.9787          0.3780          0.0687          0.6873  0.0157      0.033  0.0003
+           obfuscation 10%      6028          5828       76          44          80 0.0045     0.9742        0.9818          0.7560          0.3780          1.1684  0.0157      0.033  0.0267
+           obfuscation 20%      6028          5818       71          60          79 0.3824     0.9691        0.9838          1.4777          1.0309          1.9588  0.0157      0.033  1.0000
+           obfuscation 30%      6028          5811       71          68          78 0.8654     0.9667        0.9842          1.7526          1.2371          2.3024  0.0157      0.033  1.0000
+           obfuscation 50%      6028          5787       71         102          68 0.0223     0.9584        0.9876          2.9210          2.3024          3.5747  0.0157      0.033  0.1114
+            good-word k=10      6028          5448      130         129         321 1.0000     0.8622        0.8804          1.8213          0.9278          2.7156  0.0157      0.033  1.0000
+            good-word k=25      6028          4624      210         211         983 1.0000     0.6065        0.6254          1.8900          0.5833          3.1615  0.0157      0.033  1.0000
+            good-word k=50      6028          3678      184         107        2059 0.0000     0.2725        0.2646         -0.7904         -1.7182          0.1375  0.0157      0.033  0.0001
+good-word k=25 interleaved      6028          4574      173         240        1041 0.0011     0.5766        0.6182          4.1581          2.9897          5.3608  0.0157      0.033  0.0080
+     combined (30% + k=25)      6028          4399      112         504        1013 0.0000     0.4955        0.6488         15.3265         13.8488         16.7698  0.0157      0.033  0.0000
+                                                    quantity  value  CI_lo  CI_hi
+FPR difference HyRoS - LR, clean chronological test ham (pp)  1.732  1.219  2.277
+                  NB (word): FPR at calibrated threshold (%)  0.962  0.641  1.315
+               NB (word): recall at calibrated threshold (%) 95.395 94.570 96.117
+                 SVM (word): FPR at calibrated threshold (%)  1.507  1.090  1.956
+              SVM (word): recall at calibrated threshold (%) 97.629 97.079 98.179
+                  LR (word): FPR at calibrated threshold (%)  1.572  1.155  2.021
+               LR (word): recall at calibrated threshold (%) 97.491 96.941 98.041
+             LR (word+char): FPR at calibrated threshold (%)  2.822  2.245  3.464
+          LR (word+char): recall at calibrated threshold (%) 97.732 97.182 98.247
+        LR (word+char+norm): FPR at calibrated threshold (%)  2.822  2.277  3.400
+     LR (word+char+norm): recall at calibrated threshold (%) 97.698 97.147 98.213
+                      HyRoS: FPR at calibrated threshold (%)  3.303  2.694  3.977
+                   HyRoS: recall at calibrated threshold (%) 97.869 97.320 98.351
+                   HyRoS+GW: FPR at calibrated threshold (%)  4.009  3.335  4.715
+                HyRoS+GW: recall at calibrated threshold (%) 97.388 96.804 97.938
+             Monotone top-3: FPR at calibrated threshold (%)  2.758  2.213  3.368
+          Monotone top-3: recall at calibrated threshold (%) 47.766 45.842 49.553
+done

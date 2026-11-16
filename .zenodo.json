@@ -1,0 +1,15 @@
+{
+  "title": "HyRoS: code and results for chronological, cross-corpus and evasion stress tests of lightweight spam filters",
+  "upload_type": "software",
+  "description": "Code, split indices and result files for the study \"Beyond Near-Perfect Accuracy: Chronological, Cross-Corpus and Evasion Stress Tests of Lightweight Spam Filters\". Version 2.0.0 adds the analyses of the revised manuscript. See README.md for data sources and reproduction steps.",
+  "creators": [
+    {
+      "name": "Chasib, Haitham Shiaibth",
+      "affiliation": "General Directorate of Education in Babylon, Ministry of Education, Iraq",
+      "orcid": "0000-0003-0522-2131"
+    }
+  ],
+  "license": "MIT",
+  "keywords": ["spam filtering", "dataset shift", "Enron-Spam", "SpamAssassin", "adversarial robustness", "TF-IDF"],
+  "access_right": "open"
+}
